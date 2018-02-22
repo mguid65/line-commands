@@ -15,7 +15,7 @@ describe('LineCommands', () => {
     activationPromise = atom.packages.activatePackage('line-commands');
   });
 
-  describe('when the line-commands:toggle event is triggered', () => {
+  describe('when the line-commands:run event is triggered', () => {
     it('runs the desired command', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('LineCommands', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'line-commands:toggle');
+      atom.commands.dispatch(workspaceElement, 'line-commands:run');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('LineCommands', () => {
 
         let lineCommandsPanel = atom.workspace.panelForItem(lineCommandsElement);
         expect(lineCommandsPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'line-commands:toggle');
+        atom.commands.dispatch(workspaceElement, 'line-commands:run');
         expect(lineCommandsPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('LineCommands', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'line-commands:toggle');
+      atom.commands.dispatch(workspaceElement, 'line-commands:run');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('LineCommands', () => {
         // Now we can test for view visibility
         let lineCommandsElement = workspaceElement.querySelector('.line-commands');
         expect(lineCommandsElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'line-commands:toggle');
+        atom.commands.dispatch(workspaceElement, 'line-commands:run');
         expect(lineCommandsElement).not.toBeVisible();
       });
     });

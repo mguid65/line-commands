@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle line-commands",
-        "command": "line-commands:toggle"
+        "label": "Run line-commands",
+        "command": "line-commands:run"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "line-commands",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "line-commands:toggle"
+              "label": "Run",
+              "command": "line-commands:run"
             }
           ]
         }
