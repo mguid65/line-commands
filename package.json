@@ -1,9 +1,9 @@
 {
   "name": "line-commands",
   "main": "./lib/line-commands",
-  "version": "0.0.1",
-  "description": "An in document command engine. My custom commands can be run directly from inside a document",
-  "keywords": [
+  "version": "0.0.0",
+  "description": "An in document command engine. Custom commands can be run directly from inside a document",
+  "keywords": [ "commands", "line"
   ],
   "activationCommands": {
     "atom-workspace": "line-commands:run"
