@@ -1,7 +1,7 @@
 {
   "name": "line-commands",
   "main": "./lib/line-commands",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "An in document command engine. Custom commands can be run directly from inside a document",
   "keywords": [
     "commands",
