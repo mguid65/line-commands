@@ -5,4 +5,4 @@ Submit a pull request and I will review it.
 
 Command names must be descriptive but simple.
 
->>Do not break functionality<<
+## Do not break functionality
