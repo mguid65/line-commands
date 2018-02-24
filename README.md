@@ -20,7 +20,7 @@ In document command like modification from anywhere in document.
 
      delete startline endline
 
-   delete a line or range of lines(buggy)
+   delete a line or range of lines(maybe fixed)
 
 Type command and parameters in any blank line in document.
 The run shortcut is ctrl-alt-k. You must have your cursor in the line.
