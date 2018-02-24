@@ -28,4 +28,4 @@ This line will be deleted and the command will be parsed and processed.
 
 ## Demo
 
-![](https://github.com/mguid65/line-commands/blob/master/demo.gif)
+![Demo Only Work on GitHub](https://github.com/mguid65/line-commands/blob/master/demo.gif)
