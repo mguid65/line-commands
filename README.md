@@ -30,7 +30,7 @@ This line will be deleted and the command will be parsed and processed.
 
      copy <startline> <endline>
 
-   copy texts or codes from a range of lines
+   copy texts or codes from a range of lines (beta)
 
 ## Demo
 
